@@ -46,9 +46,10 @@
   *::before,
   *::after {
 	box-sizing: border-box;
+	margin-block: 0;
   }
 
-  /* Remove default margin and */
+  /* Remove default margin */
   body,
   h1,
   h2,
@@ -132,20 +133,12 @@
 		 main > *:not(p) {
 		   margin-block: calc(var(--line-h)*2);
 		 }
-		 li, dt, dd, br, th, td {
-		   margin-block-start: 0;
-		 }
+	 
 
 * + h2, * + h3, * + h4 {
   margin-block-start: var(--line-h);
 }
 
-
-/*
-main * + *:not(p) {
-  margin-block-start: calc(var(--line-h)*2);
-}
-*/
 
 /* Make images easier to work with */
 img,
@@ -514,10 +507,6 @@ hr {
 	padding-block: var(--line-h);
   }
 
-  .card > * {
-	margin-block: 0;
-  }
-
   aside {
 	padding-block-end: calc(var(--line-h)*4);
   }
@@ -556,8 +545,17 @@ hr {
   .socials {
 	gap: 1em;
   }
- 
+
   .socials li {
 	height: calc(var(--line-h)*1);
 	width: calc(var(--line-h)*1);
   }
+
+  .footer .grid {
+	align-items: start;
+	min-height: calc(var(--line-h)*8);
+  }
+
+.footer .grid > * > * {
+  margin-block: calc(var(--line-h)*1);
+}
