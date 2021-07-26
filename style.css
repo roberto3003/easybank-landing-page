@@ -301,7 +301,6 @@ hr {
   gap: 1em;
   align-items: center;
   justify-content: flex-end;
-  min-height: calc(var(--line-h)*3);
 }
 
 .main-nav .button {
@@ -310,6 +309,10 @@ hr {
 
 
 @media only screen and (max-width: 25em) {
+  header, .footer  {
+	padding-block: calc(var(--line-h)*2);
+  }
+
   .main-nav  .links  {
 	flex-direction: column;
 	align-items: center;
@@ -345,6 +348,14 @@ hr {
   gap: var(--gap);
 }
 
+@media only screen and (max-width: 60em) {
+  .grid {
+	grid-template-columns: repeat(
+	auto-fill,
+	minmax(18em, 1fr)
+	);
+  }
+}
 
 
 /* Flex Box */
@@ -488,6 +499,10 @@ hr {
   overflow: hidden;
 }
 
+.footer .logo {
+  padding-block-end: var(--line-h);
+}
+
 .socials svg:hover, .links svg:hover:not(.main-page) {
   fill: var(--accent);
 }
@@ -497,6 +512,10 @@ hr {
  *************************************************************************** */
 
   /* Site specific */
+
+  header, .footer {
+	padding-block: var(--line-h);
+  }
 
   .h1 .bg-image {
 	background-image: url('./images/image-mockups.png');
@@ -511,16 +530,20 @@ hr {
 	padding-block-end: calc(var(--line-h)*4);
   }
   
-  .h3, .h4 {
+.card  .h3, .h4 {
 	display: grid;
 	align-items: start;
 	min-height: calc(var(--line-h)*3);
   }
 
-  .h4 {
+  .card  .h4 {
 	min-height: calc(var(--line-h)*6);
   }	
- 
+
+  .card p {
+	margin-block-start: 0;
+  }
+
   .card .bg-image {
 	min-height: calc(var(--line-h)*15);
   }
