@@ -31,9 +31,9 @@
   --text-70: rgba(46, 49, 49, 0.7);
   --text-contrast: var(--white);
   --theme: white;
-  --medium: lightblue;
+  --medium: lightcyan;
   --contrast: gainsboro;
-  --accent: lightseagreen;
+  --accent: darkcyan;
   --white: white;
   --black: rgba(46, 49, 49, 1);
   --shadow: 0 0.25vw 1vw  0 rgba(0,0,0,0.2);
@@ -514,12 +514,50 @@ hr {
 	padding-block: var(--line-h);
   }
 
-  .h3 {
+  .h2 p, aside p {
+	margin-block-start: 0;
+  }
+
+  aside {
+	padding-block-end: calc(var(--line-h)*4);
+  }
+  
+  .h3, .h4 {
 	display: grid;
-	align-items: end;
+	align-items: start;
 	min-height: calc(var(--line-h)*3);
   }
+
+  .h4 {
+	min-height: calc(var(--line-h)*6);
+  }	
   
   .h3 h3 {
 	margin-block: 0;
   }
+
+  .card .bg-image {
+	min-height: calc(var(--line-h)*15);
+  }
+
+  .card .img {
+	margin-block-end: var(--line-h);
+  }
+
+  .card-1 .bg-image {
+	background-image: url('./images/image-plane.jpg');
+  }
+ 
+  .card-2 .bg-image {
+	background-image: url('./images/image-currency.jpg');
+   }
+
+
+  .card-3 .bg-image {
+	background-image: url('./images/image-restaurant.jpg');
+  }
+ 
+  .card-4 .bg-image {
+	background-image: url('./images/image-confetti.jpg');
+  }
+ 
