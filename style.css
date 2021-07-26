@@ -514,8 +514,8 @@ hr {
 	padding-block: var(--line-h);
   }
 
-  .h2 p, aside p {
-	margin-block-start: 0;
+  .card > * {
+	margin-block: 0;
   }
 
   aside {
@@ -531,17 +531,9 @@ hr {
   .h4 {
 	min-height: calc(var(--line-h)*6);
   }	
-  
-  .h3 h3 {
-	margin-block: 0;
-  }
-
+ 
   .card .bg-image {
 	min-height: calc(var(--line-h)*15);
-  }
-
-  .card .img {
-	margin-block-end: var(--line-h);
   }
 
   .card-1 .bg-image {
