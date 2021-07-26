@@ -552,4 +552,12 @@ hr {
   .card-4 .bg-image {
 	background-image: url('./images/image-confetti.jpg');
   }
+
+  .socials {
+	gap: 1em;
+  }
  
+  .socials li {
+	height: calc(var(--line-h)*1);
+	width: calc(var(--line-h)*1);
+  }
