@@ -495,7 +495,7 @@ hr {
   overflow: hidden;
 }
 
-.social svg:hover, .links svg:hover:not(.main-page) {
+.socials svg:hover, .links svg:hover:not(.main-page) {
   fill: var(--accent);
 }
 
